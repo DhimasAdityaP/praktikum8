@@ -1,6 +1,6 @@
 package com.example.kelascsqlite;
 
-import  androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private TemanAdapter adapter;
     private ArrayList<Teman> temanArrayList;
     DBcontroller controller = new DBcontroller(this);
-    String id,nm,tlp;
+    String nama, telepon, id;
     private FloatingActionButton fab;
 
     @Override

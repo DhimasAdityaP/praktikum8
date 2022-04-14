@@ -12,6 +12,22 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class DBcontroller extends SQLiteOpenHelper {
+
+    public void UpdateData(HashMap<String,String> queryValues){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues nilai = new ContentValues();
+        nilai.put("nama",queryValues.get("nama"));
+        nilai.put("telpon", queryValues.get("telpon"));
+        db.update("teman",nilai,"id=?",new String[]{queryValues.get("id")});
+        db.close();
+    }
+
+    public  void DeleteData(HashMap<String,String>queryValues){
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete("teman","id=?", new String[]{queryValues.get("id")});
+        db.close();
+    }
+
     public DBcontroller( Context context) {
         super(context, "ProdiTI", null, 1);
     }
@@ -40,9 +56,9 @@ public class DBcontroller extends SQLiteOpenHelper {
     public ArrayList<HashMap<String,String>> getAllTeman(){
         ArrayList<HashMap<String,String >> daftarTeman;
         daftarTeman = new ArrayList<HashMap<String,String>>();
-        String selecQuery = "Select * from teman";
+        String selectQuery = "Select * from teman";
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(selecQuery,null);
+        Cursor cursor = db.rawQuery(selectQuery,null);
         if(cursor.moveToFirst()){
             do {
                 HashMap<String,String> map = new HashMap<>();
