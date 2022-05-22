@@ -4,10 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/KelasCSqlite/app/src/main/res/layout/activity_edit_teman.xml" value="0.24635416666666668" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/KelasCSqlite/app/src/main/res/layout/activity_edit_teman2.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KelasCSqlite/app/src/main/res/layout/activity_edit_teman2.xml" value="0.16728624535315986" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KelasCSqlite/app/src/main/res/layout/activity_main.xml" value="0.2841918294849023" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KelasCSqlite/app/src/main/res/layout/activity_teman_baru.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KelasCSqlite/app/src/main/res/layout/row_data_teman.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/KelasCSqlite/app/src/main/res/menu/menu.xml" value="0.152" />
         <entry key="..\:/Users/user/AndroidStudioProjects/KelasCSqlite/app/src/main/res/menu/popupmenu.xml" value="0.25" />
       </map>
     </option>
